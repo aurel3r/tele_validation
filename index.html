@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка номера телефона</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<form id="phoneForm" action="validate_phone.php" method="post" onsubmit="return false;">
+    <label for="phoneNumber">Номера телефона:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" required>
+    <button type="button" onclick="validatePhoneNumber()">Проверить</button>
+    <p id="error-message"></p>
+    <p id="result-message"></p>
+</form>
+
+</body>
+</html>
+
+
+
